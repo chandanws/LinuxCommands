@@ -29,8 +29,11 @@ Text file **marks.txt** containing following information
 **_awk -v name=chandan 'BEGIN{printf "Name: %s\n", name}'_**
 
 - printing columns
-*awk '{print $2 "," $3}' marks.txt
+
+**_awk '{print $2 "," $3}' marks.txt_**
 
 - printing columns if any line is matched with pattern. /h/ is a pattern
 
-*awk '/h/ {print $2}' marks.txt
+**_awk '/h/ {print $2}' marks.txt_**
+
+
