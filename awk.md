@@ -28,7 +28,7 @@ Text file **marks.txt** containing following information
 
     **_awk -v name=chandan 'BEGIN{printf "Name: %s\n", name}'_**
 
-- printing columns
+- printing columns, start with $1
 
     **_awk '{print $2 "," $3}' marks.txt_**
 
@@ -36,4 +36,20 @@ Text file **marks.txt** containing following information
 
     **_awk '/h/ {print $2}' marks.txt_**
 
+- built-in **_length_** function
+
+   **_awk 'lenght($0) > 10' marks.txt_**
+   
+   **_awk 'length($1) > 4' marks.txt_**
+
+- 
+
+-
+
+-
+
+-
+   
+   
+   
 
