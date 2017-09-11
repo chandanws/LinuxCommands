@@ -22,5 +22,9 @@ Text file **marks.txt** containing following information
 
 - below command will pretty print the awk program in an output file (default file awkprof.out)
 
-**_awk 'BEGIN{printf "----Header----\n"} {print $0} END{printf "------Footer------\n"}' ''_**
+**_awk --profile 'BEGIN{printf "----Header----\n"} {print $0} END{printf "------Footer------\n"}' ''_**
+
+- '-v' option defines a variable 
+
+**_awk -v name=chandan 'BEGIN{printf "Name: %s\n", name}'_**
 
